@@ -1,0 +1,116 @@
+    :root {
+    --circle-btn-size: 34px;        /* كبرنا الحجم شوية ليستوعب الأيقونة براحة */
+    --circle-btn-bg: #fcfbfc;
+    --circle-btn-icon-size: 16px;   /* المقاس المناسب لزر 34px */
+    --circle-btn-color: #5b0c8b;
+    }
+
+    .btn-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--circle-btn-size);
+    height: var(--circle-btn-size);
+    min-width: var(--circle-btn-size);   /* يضمن عدم تغير العرض */
+    min-height: var(--circle-btn-size);  /* يضمن عدم تغير الارتفاع */
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    flex-shrink: 0;                      /* يمنع انكماش الـ Flexbox */
+    box-sizing: border-box;
+    }
+    .btn-circle i {
+
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #30024d;
+    font-family: 'Tajawal', sans-serif;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.main .bar{
+    width : 80%;
+    height: 50px;
+    background-color: #5b0c8b;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.main .bar h1{
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+.main .list{
+    direction: rtl;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.main .list .task{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.22);
+    transition: all 0.3s ease-in-out;
+}
+.main .list .done{
+background-color:rgb(158, 253, 160) ;
+}
+.main .list .task:hover{
+    box-shadow: 0px 0px 11px 6px rgb(43 41 41 / 46%);}
+
+.main .list .task .info{
+    width: 70%;
+}
+.main .list .action{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main .list .action button i{
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+
+}
+.main .list .action .first{
+    background-color: #340c8b;
+}
+.main .list .action .second{
+    background-color: #007c1b;
+}
+.main .list .action .false{
+    background-color: #000000;
+}
+.main .list .action .third{
+    background-color: rgb(184, 10, 10);
+}
+
+
